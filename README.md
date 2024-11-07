@@ -3,28 +3,43 @@ Host my README
 
 
 01
+
 docker build -t my_app:latest . 
+
 docker tag my_app:latest adaptati0n/my_app:01
+
 docker run -p 3000:3000 my_app
+
 docker push adaptati0n/my_app:01
+
 docker scout recommendations my_app:01
 
 Lien : https://hub.docker.com/layers/adaptati0n/my_app/01/images/sha256-0c0d191df4a31ccb077ef5b00b8c618dadb2f89a08c061a33b20c1806d824dff?context=repo
 
 02
+
 docker build -t my_app:latest . 
+
 docker tag my_app:latest adaptati0n/my_app:02
+
 docker run -p 3001:3000 my_app
+
 docker push adaptati0n/my_app:02
+
 docker scout recommendations my_app:02
 
 Lien :https://hub.docker.com/layers/adaptati0n/my_app/02/images/sha256-a62a7c4043dfffdd6376ff3f1bacbd971aaaee3d2a4e140ee7117af7bd699525?context=repo
 
 03
+
 docker build -t my_app:latest . 
+
 docker tag my_app:latest adaptati0n/my_app:03
-docker run -p 3002:3000 my_app
+
+docker run -p 3002:3000 my_app:03
+
 docker push adaptati0n/my_app:03
+
 docker scout recommendations my_app:03
 
 Lien :
@@ -32,9 +47,13 @@ Lien :
 04
 
 docker build -t my_app:latest . 
+
 docker tag my_app:latest adaptati0n/my_app:04
+
 docker run -p 3003:3000 my_app
+
 docker push adaptati0n/my_app:04
+
 docker scout recommendations my_app:04
 
 Lien :
