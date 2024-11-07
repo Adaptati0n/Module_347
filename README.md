@@ -3,9 +3,9 @@ Host my README
 
 Module 347 EPSIC 2024 Karim Jouini
 
-Image 01 : Q1 / Q2
+## Image 01 : Q1 / Q2
 
-Question 1 :
+### Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -17,15 +17,16 @@ docker push adaptati0n/my_app:01
 
 docker scout recommendations my_app:01
 
-Question 2 : ![image](https://github.com/user-attachments/assets/34607e42-1433-4cd6-a247-ace705208be2)
+### Question 2 :
+ ![image](https://github.com/user-attachments/assets/34607e42-1433-4cd6-a247-ace705208be2)
 
 
 Lien : https://hub.docker.com/layers/adaptati0n/my_app/01/images/sha256-0c0d191df4a31ccb077ef5b00b8c618dadb2f89a08c061a33b20c1806d824dff?context=repo
 
 
-Image 02 : Q1 / Q2 / Q3 / Q5
+## Image 02 : Q1 / Q2 / Q3 / Q5
 
-Question 1 :
+### Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -37,18 +38,21 @@ docker push adaptati0n/my_app:02
 
 docker scout recommendations my_app:02
 
-Question 2 : ![image](https://github.com/user-attachments/assets/b0df4341-89d8-4f6e-ad32-fca2554dd865)
+### Question 2 :
+![image](https://github.com/user-attachments/assets/b0df4341-89d8-4f6e-ad32-fca2554dd865)
 
-Question 3 : Il y'a eu 8 vulnérabilités, dont 6 considérées normal et 2 hautes. J'ai opté pour l'image [23-slim]
+### Question 3 :
+Il y'a eu 8 vulnérabilités, dont 6 considérées normal et 2 hautes. J'ai opté pour l'image [23-slim]
 
-Question 5 : J'ai choisi l'image 23-slim car elle ne présente aucune vulnérabilité critique, élevée, ou moyenne, ce qui en fait un choix très sûr pour déployer une application en production. L'absence de vulnérabilités est cruciale pour garantir que notre application est protégée contre les cyberattaques potentielles et les failles de sécurité.
+### Question 5 :
+J'ai choisi l'image 23-slim car elle ne présente aucune vulnérabilité critique, élevée, ou moyenne, ce qui en fait un choix très sûr pour déployer une application en production. L'absence de vulnérabilités est cruciale pour garantir que notre application est protégée contre les cyberattaques potentielles et les failles de sécurité.
 
 Lien : :https://hub.docker.com/layers/adaptati0n/my_app/02/images/sha256-a62a7c4043dfffdd6376ff3f1bacbd971aaaee3d2a4e140ee7117af7bd699525?context=repo
 
 
-Image 03 : Q1
+## Image 03 : Q1
 
-Question 1 :
+### Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -60,15 +64,16 @@ docker push adaptati0n/my_app:03
 
 docker scout recommendations my_app:03
 
-Im-3 : ![image](https://github.com/user-attachments/assets/5faf0760-9dc8-4ecc-9c4a-a4c5fda1658b)
+Im-3 :
+![image](https://github.com/user-attachments/assets/5faf0760-9dc8-4ecc-9c4a-a4c5fda1658b)
 
 
 Lien : https://hub.docker.com/layers/adaptati0n/my_app/03/images/sha256-eace4b745af002710e8d8a37d7aa19a55be780fb9a1bc3500c10bb242e75059c?context=repo
 
 
-Image 04 : Q1 / Q2
+## Image 04 : Q1 
 
-Question 1 :
+### Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -80,13 +85,14 @@ docker push adaptati0n/my_app:04
 
 docker scout recommendations my_app:04
 
-Im-4 : ![image](https://github.com/user-attachments/assets/f7649a45-7e71-4cc4-b7a7-8f87cb936431)
+Im-4 :
+![image](https://github.com/user-attachments/assets/f7649a45-7e71-4cc4-b7a7-8f87cb936431)
 
 
 Lien : https://hub.docker.com/layers/adaptati0n/my_app/04/images/sha256-ff6b683caa84c2db7c188ed28d5e7dddfc976c3c597b9b60781af7f9fbaaee2e?context=repo
 
 
-Question 4 :
+### Question 4 :
 
 ```bash
               Tag              │                  Details                  │    Pushed    │          Vulnerabilities
