@@ -1,8 +1,11 @@
 # Module_347
 Host my README
 
+Module 347 EPSIC 2024 Karim Jouini
 
-01
+Image 01 : Q1 / Q2
+
+Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -14,9 +17,15 @@ docker push adaptati0n/my_app:01
 
 docker scout recommendations my_app:01
 
+Question 2 : ![image](https://github.com/user-attachments/assets/34607e42-1433-4cd6-a247-ace705208be2)
+
+
 Lien : https://hub.docker.com/layers/adaptati0n/my_app/01/images/sha256-0c0d191df4a31ccb077ef5b00b8c618dadb2f89a08c061a33b20c1806d824dff?context=repo
 
-02
+
+Image 02 : Q1 / Q2 / Q3 / Q5
+
+Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -28,9 +37,18 @@ docker push adaptati0n/my_app:02
 
 docker scout recommendations my_app:02
 
-Lien :https://hub.docker.com/layers/adaptati0n/my_app/02/images/sha256-a62a7c4043dfffdd6376ff3f1bacbd971aaaee3d2a4e140ee7117af7bd699525?context=repo
+Question 2 : ![image](https://github.com/user-attachments/assets/b0df4341-89d8-4f6e-ad32-fca2554dd865)
 
-03
+Question 3 : Il y'a eu 8 vulnérabilités, dont 6 considérées normal et 2 hautes. J'ai opté pour l'image [23-slim]
+
+Question 5 : J'ai choisi l'image 23-slim car elle ne présente aucune vulnérabilité critique, élevée, ou moyenne, ce qui en fait un choix très sûr pour déployer une application en production. L'absence de vulnérabilités est cruciale pour garantir que notre application est protégée contre les cyberattaques potentielles et les failles de sécurité.
+
+Lien : :https://hub.docker.com/layers/adaptati0n/my_app/02/images/sha256-a62a7c4043dfffdd6376ff3f1bacbd971aaaee3d2a4e140ee7117af7bd699525?context=repo
+
+
+Image 03 : Q1
+
+Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -42,9 +60,15 @@ docker push adaptati0n/my_app:03
 
 docker scout recommendations my_app:03
 
-Lien :
+Im-3 : ![image](https://github.com/user-attachments/assets/5faf0760-9dc8-4ecc-9c4a-a4c5fda1658b)
 
-04
+
+Lien : https://hub.docker.com/layers/adaptati0n/my_app/03/images/sha256-eace4b745af002710e8d8a37d7aa19a55be780fb9a1bc3500c10bb242e75059c?context=repo
+
+
+Image 04 : Q1 / Q2
+
+Question 1 :
 
 docker build -t my_app:latest . 
 
@@ -56,7 +80,13 @@ docker push adaptati0n/my_app:04
 
 docker scout recommendations my_app:04
 
-Lien :
+Im-4 : ![image](https://github.com/user-attachments/assets/f7649a45-7e71-4cc4-b7a7-8f87cb936431)
+
+
+Lien : https://hub.docker.com/layers/adaptati0n/my_app/04/images/sha256-ff6b683caa84c2db7c188ed28d5e7dddfc976c3c597b9b60781af7f9fbaaee2e?context=repo
+
+
+Question 4 :
 
 ```bash
               Tag              │                  Details                  │    Pushed    │          Vulnerabilities
@@ -174,4 +204,25 @@ Lien :
   • 20.18.0-bookworm           │                                           │              │
                                │                                           │              │
                                │                                           │              │
+```
+```bash
+Question 6:
+
+Image Choisie : node:23-alpine
+Pourquoi node:23-alpine ?
+
+Légèreté et Rapidité :
+
+L'image alpine est une version minimaliste de Linux qui est connue pour sa taille extrêmement réduite. Cela signifie que l'image est plus petite, ce qui permet un démarrage et un déploiement plus rapides des conteneurs. En comparaison avec les images complètes, node:23-alpine peut réduire considérablement la consommation de ressources.
+Sécurité Améliorée :
+
+Avec moins de paquets et de dépendances installés par défaut, l'image alpine réduit la surface d'attaque potentielle. Cela signifie qu'il y a moins de vulnérabilités exploitables par des attaquants, ce qui en fait un choix plus sécurisé pour des applications déployées en production.
+Optimisation des Ressources :
+
+L'image node:23-alpine consomme moins de mémoire et d'espace disque, ce qui est particulièrement avantageux pour les environnements où les ressources sont limitées. Cela aide également à améliorer l'efficacité globale de l'application.
+Avantages de l'Image node:23-alpine
+Taille Réduite : L'image alpine est significativement plus petite que les versions complètes, ce qui diminue les coûts de stockage et améliore les performances de téléchargement et de déploiement.
+Sécurité : Moins de composants signifie moins de vulnérabilités potentielles, et l'image est régulièrement mise à jour pour inclure les derniers correctifs de sécurité.
+Performance : Démarrage rapide des conteneurs, ce qui est crucial pour des applications nécessitant une mise en ligne rapide.
+
 ```
