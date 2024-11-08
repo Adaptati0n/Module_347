@@ -6,16 +6,22 @@ Module 347 EPSIC 2024 Karim Jouini
 ## Image 01 : Q1 / Q2
 
 ### Question 1 :
-
-docker build -t my_app:latest . 
-
+1) Créer l’image Docker
+```bash
+docker build -t my_app:latest .
+```
+2) Taguer l’image pour DockerHub
+```bash
 docker tag my_app:latest adaptati0n/my_app:01
-
-docker run -p 3000:3000 my_app
-
+```
+3) Lancer l’image dans un container
+```bash
+docker run -p 3000:3000 my_app:01
+```
+4) Pousser l’image sur DockerHub
+```bash
 docker push adaptati0n/my_app:01
-
-docker scout recommendations my_app:01
+```
 
 ### Question 2 :
  ![image](https://github.com/user-attachments/assets/34607e42-1433-4cd6-a247-ace705208be2)
@@ -28,16 +34,26 @@ Lien : https://hub.docker.com/layers/adaptati0n/my_app/01/images/sha256-0c0d191d
 
 ### Question 1 :
 
-docker build -t my_app:latest . 
-
-docker tag my_app:latest adaptati0n/my_app:02
-
-docker run -p 3001:3000 my_app
-
+1) Créer l’image Docker
+```bash
+docker build -t my_app:02 .
+```
+2) Taguer l’image 02 pour DockerHub
+```bash
+docker tag my_app:02 adaptati0n/my_app:02
+```
+3) Lancer l’image dans un container
+```bash
+docker run -p 3001:3000 my_app:02
+```
+4) Pousser l’image sur DockerHub
+```bash
 docker push adaptati0n/my_app:02
-
+```
+5) Scannez l'image
+```bash
 docker scout recommendations my_app:02
-
+```
 ### Question 2 :
 ![image](https://github.com/user-attachments/assets/b0df4341-89d8-4f6e-ad32-fca2554dd865)
 
@@ -54,15 +70,26 @@ Lien : :https://hub.docker.com/layers/adaptati0n/my_app/02/images/sha256-a62a7c4
 
 ### Question 1 :
 
-docker build -t my_app:latest . 
-
-docker tag my_app:latest adaptati0n/my_app:03
-
+1) Créer l’image Docker
+```bash
+docker build -t my_app:03 .
+```
+2) Taguer l’image 03 pour DockerHub
+```bash
+docker tag my_app:03 adaptati0n/my_app:03
+```
+3) Lancer l’image dans un container
+```bash
 docker run -p 3002:3000 my_app:03
-
+```
+4) Pousser l’image sur DockerHub
+```bash
 docker push adaptati0n/my_app:03
-
+```
+5) Scannez l'image
+```bash
 docker scout recommendations my_app:03
+```
 
 Im-3 :
 ![image](https://github.com/user-attachments/assets/5faf0760-9dc8-4ecc-9c4a-a4c5fda1658b)
@@ -75,15 +102,26 @@ Lien : https://hub.docker.com/layers/adaptati0n/my_app/03/images/sha256-eace4b74
 
 ### Question 1 :
 
-docker build -t my_app:latest . 
-
-docker tag my_app:latest adaptati0n/my_app:04
-
-docker run -p 3003:3000 my_app
-
+1) Créer l’image Docker
+```bash
+docker build -t my_app:04 .
+```
+2) Taguer l’image 04pour DockerHub
+```bash
+docker tag my_app:04 adaptati0n/my_app:04
+```
+3) Lancer l’image dans un container
+```bash
+docker run -p 3003:3000 my_app:04
+```
+4) Pousser l’image sur DockerHub
+```bash
 docker push adaptati0n/my_app:04
-
+```
+5) Scannez l'image
+```bash
 docker scout recommendations my_app:04
+```
 
 Im-4 :
 ![image](https://github.com/user-attachments/assets/f7649a45-7e71-4cc4-b7a7-8f87cb936431)
