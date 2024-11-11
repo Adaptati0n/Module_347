@@ -24,7 +24,8 @@ docker push adaptati0n/my_app:01
 ```
 
 ### Question 2 :
- ![image](https://github.com/user-attachments/assets/34607e42-1433-4cd6-a247-ace705208be2)
+![image](https://github.com/user-attachments/assets/ed9beb1e-feea-48e2-a9ed-385aa1c508d7)
+
 
 
 Lien : https://hub.docker.com/layers/adaptati0n/my_app/01/images/sha256-0c0d191df4a31ccb077ef5b00b8c618dadb2f89a08c061a33b20c1806d824dff?context=repo
@@ -38,24 +39,30 @@ Lien : https://hub.docker.com/layers/adaptati0n/my_app/01/images/sha256-0c0d191d
 ```bash
 docker build -t my_app:02 .
 ```
-2) Taguer l’image 02 pour DockerHub
+2)
+```bash
+docker run -P -d --name my_app_container2 -v my_volume:/etc/todos adaptati0n/my_app:01  
+docker run -p 3004:3000 -d --name my_app_container3 -v my_volume:/etc/todos adaptati0n/my_app:02
+```
+3) Taguer l’image 02 pour DockerHub
 ```bash
 docker tag my_app:02 adaptati0n/my_app:02
 ```
-3) Lancer l’image dans un container
+4) Lancer l’image dans un container
 ```bash
 docker run -p 3001:3000 my_app:02
 ```
-4) Pousser l’image sur DockerHub
+5) Pousser l’image sur DockerHub
 ```bash
 docker push adaptati0n/my_app:02
 ```
-5) Scannez l'image
+6) Scannez l'image
 ```bash
 docker scout recommendations my_app:02
 ```
 ### Question 2 :
-![image](https://github.com/user-attachments/assets/b0df4341-89d8-4f6e-ad32-fca2554dd865)
+![image](https://github.com/user-attachments/assets/5b0dbf96-e6d8-4157-999f-80474ca9e5f3)
+
 
 ### Question 3 :
 Il y'a eu 8 vulnérabilités, dont 6 considérées normal et 2 hautes. J'ai opté pour l'image [23-slim]
@@ -124,11 +131,11 @@ docker scout recommendations my_app:04
 ```
 
 Im-4 :
-![image](https://github.com/user-attachments/assets/f7649a45-7e71-4cc4-b7a7-8f87cb936431)
+![image](https://github.com/user-attachments/assets/c36641f9-0f0d-4e4e-8bb6-a3f8b5528970)
 
 
-Lien : https://hub.docker.com/layers/adaptati0n/my_app/04/images/sha256-ff6b683caa84c2db7c188ed28d5e7dddfc976c3c597b9b60781af7f9fbaaee2e?context=repo
 
+Lien : https://hub.docker.com/layers/adaptati0n/my_app/04-alpine/images/sha256-ff6b683caa84c2db7c188ed28d5e7dddfc976c3c597b9b60781af7f9fbaaee2e?context=repo
 
 ### Question 4 :
 
